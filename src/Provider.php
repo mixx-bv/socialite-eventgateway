@@ -88,6 +88,6 @@ class Provider extends AbstractProvider
 
     protected function baseUrl(): string
     {
-        return 'http://event-gateway.test';
+        return 'https://event-gateway.eventsight.eu';
     }
 }
