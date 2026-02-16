@@ -40,7 +40,7 @@ class Provider extends AbstractProvider
      */
     protected function getUserByToken($token): array
     {
-        $userinfoUrl = rtrim($this->baseUrl(), '/').'/oauth/userinfo';
+        $userinfoUrl = rtrim($this->baseUrl(), '/').'/api/oauth/userinfo';
         $response = $this->getHttpClient()->get($userinfoUrl, [
             'headers' => [
                 'Authorization' => 'Bearer '.$token,
