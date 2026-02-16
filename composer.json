@@ -1,0 +1,27 @@
+{
+    "name": "mixxbv/socialite-eventgateway",
+    "type": "library",
+    "require": {
+        "php": "^8.1",
+        "laravel/socialite": "^5.0",
+        "socialiteproviders/manager": "^4.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mixxbv\\SocialiteEventgateway\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mixxbv\\SocialiteEventgateway\\SocialiteEventgatewayServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Andries Heylen"
+        }
+    ]
+}
